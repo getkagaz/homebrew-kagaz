@@ -19,10 +19,10 @@
 class Kagaz < Formula
   desc "Local-first document vault manager for macOS"
   homepage "https://github.com/getkagaz/kagaz"
-  url "https://github.com/getkagaz/kagaz/archive/refs/tags/v0.1.0.tar.gz"
-  version "0.1.0"
-  # Placeholder: filled in by .github/workflows/release.yml at tag time.
-  sha256 "683264f994e2789442d3d9b48a7408373837ef43be4cad82f48130e5ac597602"
+  url "https://github.com/getkagaz/kagaz/archive/refs/tags/v0.1.1.tar.gz"
+  # Rewritten by .github/workflows/release.yml at tag time; the value
+  # here is a placeholder until then.
+  sha256 "d9a618e1ba199310f28798fe241cd8f1dd27010455aba26829c4973e20058564"
   license "MIT"
   head "https://github.com/getkagaz/kagaz.git", branch: "main"
 
@@ -32,8 +32,8 @@ class Kagaz < Formula
   end
 
   bottle do
-    root_url "https://github.com/getkagaz/kagaz/releases/download/v0.1.0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "5fc027018dfe3cfe0ce51c919d075aa928f6e4758705db5076b2153a10799270"
+    root_url "https://github.com/getkagaz/kagaz/releases/download/v0.1.1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "1a924fac9295a7d5a819c69375f76800cda9bf29acfc643f19ce544f1a313ffc"
   end
 
   depends_on "go" => :build
